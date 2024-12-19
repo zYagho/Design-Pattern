@@ -1,7 +1,7 @@
 Códigos de serão utilizados como exemplo pertence ao: https://refactoring.guru/pt-br/design-patterns
 
 
-<h1><strong>Padrão de Projeto Criaconal: Singleton<strong/><h1/> 
+<h1><strong>Padrão de Projeto Criaconal: Singleton<\strong><\h1/> 
   
 O Singleton busca garantir que exista uma única instância de uma classe, forcendo um ponto de acesso global a essa instância. Sendo muito utilizado em situações onde a quantidade de instâncias pode
 vir a causar problemas. 
