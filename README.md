@@ -1,16 +1,28 @@
 Códigos de serão utilizados como exemplo pertence ao: https://refactoring.guru/pt-br/design-patterns
 
 
-<h1><strong>Padrão de Projeto Criaconal: Singleton<\strong><\h1/> 
-  
-O Singleton busca garantir que exista uma única instância de uma classe, forcendo um ponto de acesso global a essa instância. Sendo muito utilizado em situações onde a quantidade de instâncias pode
-vir a causar problemas. 
+<h1><strong>Padrão de Projeto Criacional: Singleton</strong></h1>
 
-<h2>Problemas Resolvido pelo Singleton:<h2/> 
-  1. Controle de instância: Garante que uma classe tenha apenas uma única instância durante a execução de um programa, dessa forma simplificando as insconsistências que poderiam surgir decorrente de várias instâncias.
+<p>
+O <strong>Singleton</strong> é um padrão de projeto criacional que garante a existência de apenas uma única instância de uma classe e força um ponto de acesso global a essa instância. É amplamente utilizado em situações onde múltiplas instâncias poderiam causar problemas, como no gerenciamento de recursos compartilhados.
+</p>
 
-  2. Ponto de Acesso Global: Fornece um único ponto de acesso para uma determinada instância de uma classe, dessa forma permintindo um compartilhamento mais fácil em diferentes partes do código.
+<h2>Problemas Resolvidos pelo Singleton:</h2>
+<ol>
+  <li><strong>Controle de Instância:</strong> Garante que uma classe tenha apenas uma única instância durante a execução de um programa. Isso simplifica a gestão de recursos e evita inconsistências que poderiam surgir devido à existência de várias instâncias.</li>
+  <li><strong>Ponto de Acesso Global:</strong> Fornece um único ponto de acesso para uma instância específica de uma classe, permitindo seu compartilhamento de forma eficiente em diferentes partes do código.</li>
+</ol>
 
-<h2>Solução para os problemas:<h2/> 
-  1. Fazer com que o construtor da classe seja privado, assim previnindo que outros objetos possam criar uma instância nova dessa classe.
-  2. Fazer um método estático que tenha a função de um construtor, dessa forma, esse método chama o construtor privador quando não existir instância "viva", e apenas retorna a instância atual quando solicitada.
+<h2>Solução para os Problemas:</h2>
+<ol>
+  <li>
+    Tornar o construtor da classe <strong>privado</strong>, impedindo que outras partes do código criem novas instâncias diretamente.
+  </li>
+  <li>
+    Criar um <strong>método estático</strong> que funciona como um construtor controlado. Esse método verifica se já existe uma instância "viva" da classe:
+    <ul>
+      <li>Se não existir, o método chama o construtor privado para criar uma nova instância e a armazena.</li>
+      <li>Se já existir, ele retorna a instância existente.</li>
+    </ul>
+  </li>
+</ol>
