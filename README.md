@@ -1,5 +1,5 @@
 Códigos de serão utilizados como exemplo pertence ao: https://refactoring.guru/pt-br/design-patterns
-
+O ChatGPT também foi utilizado para algumas documentações.
 
 <h1><strong>Padrão de Projeto Criacional: Singleton</strong></h1>
 
@@ -29,7 +29,7 @@ O <strong>Singleton</strong> é um padrão de projeto criacional que garante a e
 
 <h2>Considerações:</h2>
 <p>
-  Em anexo estará também um código de exemplo desse padrão de projeto e também um diagrama UML que melhora o entendimento sobre qual o seu funcionamento.
+  Em anexo estará também um código em python de exemplo desse padrão de projeto e também um diagrama UML que melhora o entendimento sobre qual o seu funcionamento.
   Temos que na prática, o singleton será um "Controller" das instâncias que serão geradas de uma determinada classe, fazendo com que apenas 1 exista ao mesmo tempo.
 </p>
 
@@ -65,5 +65,5 @@ O <strong>Flyweight</strong> é um padrão de projeto estrutural que permite que
 
 <h2>Considerações:</h2>
 <p>
-O padrão Flyweight é somente uma optimização. Antes de aplicá-lo, certifique-se que seu programa tem mesmo um problema de consumo de RAM relacionado a existência de múltiplos objetos similares na memória ao mesmo tempo. Certifique-se que o problema não possa ser resolvido por outra forma relevante.
+O padrão Flyweight é somente uma optimização. Antes de aplicá-lo, certifique-se que seu programa tem mesmo um problema de consumo de RAM relacionado a existência de múltiplos objetos similares na memória ao mesmo tempo. Certifique-se que o problema não possa ser resolvido por outra forma relevante. Anexado está um diagrama UML e um código em python exemplificando o funcionamento deste padrão de projeto.
 </p>
