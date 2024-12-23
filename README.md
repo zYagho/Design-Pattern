@@ -26,3 +26,40 @@ O <strong>Singleton</strong> é um padrão de projeto criacional que garante a e
     </ul>
   </li>
 </ol>
+
+<h2>Considerações:</h2>
+<p>
+  Em anexo estará também um código de exemplo desse padrão de projeto e também um diagrama UML que melhora o entendimento sobre qual o seu funcionamento.
+  Temos que na prática, o singleton será um "Controller" das instâncias que serão geradas de uma determinada classe, fazendo com que apenas 1 exista ao mesmo tempo.
+</p>
+
+<h1><strong>Padrão de Projeto Estrutural: Flyweight</strong></h1>
+
+<p>
+O <strong>Flyweight</strong> é um padrão de projeto estrutural que permite que programas usem eficientemente grandes quantidades de objetos semelhantes.
+    Ele economiza memória compartilhando partes do estado entre objetos em vez de armazená-las separadamente em cada instância
+</p>
+
+<h2>Problemas Resolvidos pelo Flyweight:</h2>
+<ol>
+    <li><strong>Redução de Consumo de Memória:</strong> Em aplicações que precisam lidar com muitos objetos semelhantes, criar uma instância separada para cada um pode ser ineficiente. O Flyweight compartilha os dados comuns entre os objetos para reduzir o consumo de recursos.</li>
+    <li><strong>Melhoria no Desempenho:</strong> Ao reutilizar objetos e evitar a criação excessiva de instâncias, o Flyweight reduz o overhead de processamento associado à gestão de memória.</li>
+</ol>
+
+<h2>Solução para os Problemas:</h2>
+<p>
+  O padrão Flyweight sugere que você pare de armazenar o estado extrínseco dentro do objeto. Ao invés disso, você deve passar esse estado para métodos específicos que dependem dele. Somente o estado intrínseco fica dentro do objeto, permitindo que você o reutilize em 
+  diferentes contextos. Como resultado, você vai precisar de menos desses objetos uma vez que eles diferem apenas em seu estado intrínseco, que tem menos variações que o extrínseco.
+</p>
+<ol>
+    <li>
+        Separar o estado do objeto em dois tipos:
+        <ul>
+            <li><strong>Estado Intrínseco:</strong> Dados que podem ser compartilhados entre múltiplos objetos, como formas geométricas, configurações de fonte ou modelos de objetos.</li>
+            <li><strong>Estado Extrínseco:</strong> Dados específicos de cada instância que não podem ser compartilhados, como posição, cor ou contexto em que o objeto é usado.</li>
+        </ul>
+    </li>
+    <li>
+        Criar uma <strong>fábrica de Flyweights</strong>  que gerencie a criação e o compartilhamento de objetos com estados intrínsecos, garantindo a reutilização de instâncias existentes. O método aceita o estado intrínseco do flyweight desejado por um cliente, procura por um objeto flyweight existente que coincide com esse estado, e retorna ele se for encontrado. Se não for, ele cria um novo flyweight e o adiciona ao conjunto.
+    </li>
+
