@@ -62,6 +62,7 @@ O <strong>Flyweight</strong> é um padrão de projeto estrutural que permite que
     <li>
         Criar uma <strong>fábrica de Flyweights</strong>  que gerencie a criação e o compartilhamento de objetos com estados intrínsecos, garantindo a reutilização de instâncias existentes. O método aceita o estado intrínseco do flyweight desejado por um cliente, procura por um objeto flyweight existente que coincide com esse estado, e retorna ele se for encontrado. Se não for, ele cria um novo flyweight e o adiciona ao conjunto.
     </li>
+</ol>
 
 <h2>Considerações:</h2>
 <p>
