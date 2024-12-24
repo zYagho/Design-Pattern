@@ -67,3 +67,29 @@ O <strong>Flyweight</strong> é um padrão de projeto estrutural que permite que
 <p>
 O padrão Flyweight é somente uma optimização. Antes de aplicá-lo, certifique-se que seu programa tem mesmo um problema de consumo de RAM relacionado a existência de múltiplos objetos similares na memória ao mesmo tempo. Certifique-se que o problema não possa ser resolvido por outra forma relevante. Anexado está um diagrama UML e um código em python exemplificando o funcionamento deste padrão de projeto.
 </p>
+
+<h1><strong>Padrão de Projeto Comportamental: Mediator</strong></h1>
+
+<p>
+  O Mediator é um padrão de projeto comportamental que permite que você reduza as dependências caóticas entre objetos. O padrão restringe comunicações diretas entre objetos e os força a colaborar apenas através do objeto mediador.
+</p>
+
+<h2>Problemas Resolvidos pelo Mediator:</h2>
+<ol>
+    <li><strong>Redução de Acoplamento:</strong>Em sistemas com muitos objetos interdependentes, as relações diretas tornam o código complexo e difícil de manter. O Mediator centraliza a lógica de interação, eliminando essas dependências diretas</li>
+    <li><strong>Melhoria na Reutilização de Componentes:</strong> Os componentes ficam independentes entre si, podendo ser reutilizados em diferentes contextos sem alterações significativas.</li>
+    <li><strong>Simplificação da Lógica de Coordenação:</strong>Em vez de os objetos coordenarem suas interações diretamente, o mediador gerencia toda a lógica de comunicação.</li>
+</ol>
+
+<h2>Solução para os Problemas:</h2>
+<ol>
+    <li><strong>Uso de um Mediador Central:</strong>Um objeto mediador é criado para gerenciar as interações entre vários componentes. Os componentes notificam o mediador sobre eventos e aguardam respostas ou comandos.</li>
+    <li><strong>Interface de Notificação::</strong> Todos os componentes se comunicam com o mediador através de uma interface comum. Isso garante flexibilidade, permitindo que novos mediadores possam ser usados sem alterar os componentes existentes.</li>
+</ol>
+
+<h2>Considerações:</h2>
+<p>
+Em anexo está um código implementando esse padrão de projeto, juntamente com um diagrama UML que o exemplifica. Vale ressaltar também que antes de adotar o padrão Mediator, avalie a necessidade real de desacoplamento e centralização de interações no seu sistema. Aplicá-lo desnecessariamente pode introduzir complexidade adicional ao código.
+</p>
+
+
